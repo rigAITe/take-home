@@ -22,8 +22,8 @@ const Login = () => {
   const router = useRouter();
 
   const {values, errors, handleChange} = useFormHandler({
-    email: "segunoba@yopmail.com",
-    password: "Pass@1234",
+    email: "",
+    password: "",
   });
 
   const [securePassword, setSecurePassword] = useState(true);
