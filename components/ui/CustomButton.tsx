@@ -62,7 +62,9 @@ const CustomButton: React.FC<IProps> = ({
       style={[
         styles.flexContainer,
         {
-          marginBottom: noBottomSpace ? 0 : bottom + 20,
+          marginBottom: noBottomSpace
+            ? 0
+            : bottom + (Platform.OS === "android" ? 20 : 0),
           backgroundColor: disabled || isLoading ? "#ABB7C1" : "#022745",
         },
       ]}
